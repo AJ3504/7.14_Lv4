@@ -1,3 +1,5 @@
+📌배포 파일📌
+
 클릭한 바로 그 게시글 = targetContent
 json-server --watch db.json --port 4001
 
