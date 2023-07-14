@@ -18,10 +18,10 @@ const contentsSlice = createSlice({
       return state.map((item) => {
         if (item.id === action.payload.id) {
           //수정시의 action.payload는 내용수정한 그 게시물
-          console.log(action.payload);
+          //console.log(action.payload);
           return action.payload;
         } else {
-          console.log(item);
+          //console.log(item);
           return item;
         }
       });

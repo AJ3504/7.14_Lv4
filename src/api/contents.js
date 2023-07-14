@@ -8,7 +8,7 @@ const getContents = async () => {
     const response = await axios.get(
       `${process.env.REACT_APP_SERVER_URL}/contents`
     );
-    console.log("콘솔2", response.data);
+    //console.log("콘솔2", response.data);
 
     return response.data; // response.data를 반환해야 useQuery의 addContent에서 데이터를 받을 수 있음
   } catch (error) {
@@ -19,7 +19,7 @@ const getContents = async () => {
 
 //2. 데이터 추가
 // const addContent = async (newContent) => {
-//   console.log("콘솔3", response.data)
+//   //console.log("콘솔3", response.data)
 // };
 
 const addContent = async (newContent) => {

@@ -15,7 +15,7 @@ const Main_ModalForm = () => {
     //변경이 일어난 경우, 갱신해줘야 하는 데이터 없는지 생각 -> 있다면, 해당 쿼리 key를 invalidate
     onSuccess: () => {
       queryClient.invalidateQueries("contents");
-      console.log("POST 성공하였습니다😀");
+      //console.log("POST 성공하였습니다😀");
     },
   });
 
@@ -29,7 +29,7 @@ const Main_ModalForm = () => {
   //UseSelector
   const userList = useSelector((state) => state.userSlice);
   const loginUser = userList.find((user) => user.isLogin === true);
-  console.log("loginUser 테스트>", loginUser);
+  //console.log("loginUser 테스트>", loginUser);
 
   //기타
   const options = ["엔터테인먼트/예술", "책", "데이트코스 추천"];

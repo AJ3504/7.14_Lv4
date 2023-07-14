@@ -12,8 +12,8 @@ function Login() {
   //UseSelector
   const userList = useSelector((state) => state.userSlice);
   const loginUser = userList.find((user) => user.isLogin === true);
-  // console.log("userList테스트>", userList);
-  // console.log("loginUser 테스트2>", loginUser);
+  // //console.log("userList테스트>", userList);
+  // //console.log("loginUser 테스트2>", loginUser);
 
   //hooks
   const dispatch = useDispatch();
